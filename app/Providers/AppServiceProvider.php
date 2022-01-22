@@ -14,6 +14,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->app->register(\Nuwave\Lighthouse\LighthouseServiceProvider::class);
     }
 
     /**
@@ -24,5 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+
+
     }
 }
